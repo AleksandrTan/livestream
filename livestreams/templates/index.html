@@ -1,10 +1,25 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="{% static "js/jquery.js" %}"></script>
 </head>
 <body>
+    <div>
+        <p id="one">
+            HEllo!!!!
+        </p>
+    </div>
 
+<script>
+$(document).ready( function() {
+
+    $('#one').on('click', function (){
+        alert(1200);
+    })
+});
+</script>
 </body>
 </html>
